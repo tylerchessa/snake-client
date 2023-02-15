@@ -17,6 +17,22 @@ const connect = function() {
 
   conn.write("Name: TBC");
 
+  
+
+//   let time2 = 50; 
+//   for (let x = 1; x< 1000; x++) {
+//   setTimeout(() => {
+   
+//     conn.write("Move: right")
+//   }, time2
+// ); 
+// time2 += x
+//   }
+
+//   setTimeout(() => {
+//     conn.write("Move: down")
+//   }, 1150)
+
   return conn;
 };
 
