@@ -2,7 +2,6 @@
 const connect = require("./client.js")
 const setupInput = require("./input.js")
 
-
 // const setupInput = function () {
 //   const stdin = process.stdin;
 //   stdin.setRawMode(true);
@@ -40,5 +39,5 @@ const setupInput = require("./input.js")
 
 
 console.log("Connecting ...");
-connect();
-setupInput();
+const conn = connect();
+setupInput(conn);

@@ -7,6 +7,7 @@ const connect = function() {
   });
   conn.on('connect', () => {
   console.log('Successfully connected to game server')
+  conn.write("Name: TBC")
   })
   // interpret incoming data as text
   conn.setEncoding("utf8");
@@ -14,10 +15,6 @@ const connect = function() {
   conn.on('data', (dataInput) => {
     console.log(dataInput);
   })
-
-  conn.write("Name: TBC");
-
-  
 
 //   let time2 = 50; 
 //   for (let x = 1; x< 1000; x++) {
