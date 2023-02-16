@@ -32,6 +32,19 @@ const handleUserInput = function (key) {
     console.log("move left:")
     connection.write('Move: left')
   }
+  if (key === 'p') {
+    console.log("passing")
+    connection.write('Say: passing')
+  }
+  if (key === 't') {
+    console.log("thanks")
+    connection.write('Say: thanks')
+  }
+  if (key === 'r') {
+    console.log("rocket")
+    connection.write('Say: 🚀')
+  }
+  
 };
 
 
